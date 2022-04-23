@@ -1,0 +1,28 @@
+.sidebar-wrapper {
+  background: url("../../../../assets/nav_background.png") no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+    h3 {
+      font-size: 24px;
+    }
+    }
+  }
+  .logout {
+    padding-left: 60px;
+    cursor: pointer;
+  }
+}

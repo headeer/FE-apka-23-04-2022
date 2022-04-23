@@ -1,0 +1,47 @@
+@import "../../../styles/colors";
+.main-wrapper {
+  background:$gradient-black-cyan ;
+  display: grid;
+  grid-template-columns: 13.5% 1fr;
+  .content .select-room {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    margin: 20px 20px 0 auto;
+    justify-content: flex-end;
+  }
+  .content {
+
+    .wrapper {
+      margin: 20px auto 0 auto;
+      width: 80%;
+      height: 73%;
+      -webkit-box-shadow: 8px 8px 16px -13px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 8px 8px 16px -13px rgba(66, 68, 90, 1);
+      box-shadow: 8px 8px 16px -13px rgba(66, 68, 90, 1);
+      background: #076585;  /* fallback for old browsers */
+      border-radius: 20px;
+
+      background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+    .stats {
+      display: flex;
+      margin: 20px 0 0 auto;
+      background: url("../../../assets/footer_background.png") no-repeat;
+background-size: cover;
+      align-items: center;
+      justify-content: space-evenly;
+      max-width: 90%;
+      border-bottom-left-radius: 20px;
+      &.confirm {
+        max-width: 70%;
+      }
+      .btn {
+        background: $;
+      }
+    }
+  }
+}
