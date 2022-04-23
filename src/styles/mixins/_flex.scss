@@ -1,0 +1,36 @@
+//@use 'sass:math';
+//$desktop-asset-width: 1366px;
+//$mobile-asset-width: 375px;
+//$mobile-end: 1024px;
+//$desktop-start: $mobile-end + 1px;
+//$desktop-end: 1920px;
+//$large-desktop-start: $desktop-end +1px;
+//$desktop-scale: math.div($desktop-end, $desktop-asset-width);
+//@mixin flex($direction, $wrap, $justify-content, $align-items) {
+//  display: flex;
+//  flex-flow: $direction $wrap;
+//  align-items: $align-items;
+//  justify-content: $justify-content;
+//}
+//@function fwget-vw($value) {
+//  @return math.div($value, $desktop-asset-width)*100vw;
+//}
+//
+//@function mobile-get-vw($value) {
+//  @return math.div($value, $mobile-asset-width)*100vw;
+//}
+//
+//@mixin fwParamSize ($parameter, $size) {
+//  #{$parameter}: fwget-vw($size);
+//
+//  @media screen and (min-width: $desktop-end) {
+//    $scale: math.div($desktop-end, $desktop-asset-width);
+//    #{$parameter}: floor($size*$scale);
+//  }
+//}
+//
+//@mixin mobileParamSize( $parameter, $size ) {
+//  @media screen and (max-width: $mobile-end) {
+//    #{$parameter}: mobile-get-vw($size);
+//  }
+//}

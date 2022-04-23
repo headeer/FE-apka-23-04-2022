@@ -1,0 +1,27 @@
+@import "../../colors";
+.login-wrapper {
+  background: $gradient-purple;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    background: $gradient-purple-light;
+    border-radius: 32px;
+    border: 1px solid $light-grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  &__image{
+    height: 100%;
+    position: relative;
+    img {
+      border-top-right-radius: 32px;
+      border-bottom-right-radius: 32px;
+    }
+    border-radius: 32px;
+  }
+}

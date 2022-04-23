@@ -1,0 +1,219 @@
+@import "shared";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Lato&display=swap');
+.h1,
+h1 {
+  font-size: get-mvw(91px);
+  text-align: center;
+  margin: 0;
+  font-weight:300;
+  font-family: "Comfortaa", sans-serif;
+  @media #{$md} {
+    font-size: get-tvw(42px);
+    line-height: get-tvw(46px);
+
+  }
+
+  @media #{$xl} {
+    font-size: get-vw(51px);
+    line-height: get-tvw(54px);
+
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 51px;
+  }
+}
+
+.h2,
+h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: get-mvw(64px);
+  font-weight:300;
+  margin: get-mvw(35px) 0;
+  @media #{$md} {
+    font-size: get-tvw(24px);
+    line-height: get-tvw(26px);
+    margin: get-tvw(15px) 0;
+  }
+
+  @media #{$xl} {
+    font-size: get-vw(40px);
+    line-height: get-tvw(44px);
+
+    margin: get-vw(30px) 0;
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+
+}
+
+.h3,
+h3 {
+  font-size: get-mvw(54px);
+  font-family: "Comfortaa", sans-serif;
+  margin: 0;
+  font-weight:300;
+
+  @media #{$md} {
+    font-size: get-tvw(28px);
+    line-height: get-tvw(32px);
+
+  }
+
+  @media #{$xl} {
+    font-size: get-vw(40px);
+    line-height: get-tvw(48px);
+
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 40px;
+  }
+}
+
+.h4, a,
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+
+  @media #{$sm} {
+    font-size: 16px;
+    line-height: get-tvw(22px);
+
+  }
+  @media #{$xl} {
+    font-size: 16px;
+
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 29px;
+  }
+
+}
+
+.h5,
+h5 {
+  font-size: get-mvw(41px);
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+
+  @media #{$md} {
+    font-size: get-tvw(16px);
+    line-height: get-tvw(22px);
+
+  }
+
+  @media #{$xl} {
+    font-size: get-vw(22px);
+    line-height: get-tvw(26px);
+
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 22px;
+  }
+}
+
+.h6,
+h6 {
+  font-size: get-mvw(54px);
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+
+  @media #{$md} {
+    font-size: get-tvw(22px);
+  }
+
+  @media #{$xl} {
+    font-size: get-vw(29px);
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 29px;
+  }
+}
+
+p, h7 {
+  color: $main-text;
+  font-size: get-mvw(41px);
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  @media #{$md} {
+    font-size: get-tvw(16px);
+    line-height: get-tvw(22px);
+
+  }
+
+  @media #{$xl} {
+    font-size: get-vw(16px);
+    line-height: get-tvw(22px);
+
+  }
+
+  @media (min-width: 1921px) {
+    font-size: 16px;
+  }
+}
+
+input {
+  font-family: "Lato", sans-serif;
+
+  &::placeholder {
+    font-family: "Lato", sans-serif;
+
+  }
+}
+
+b,
+strong {
+  font-weight: bold !important;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+//.main-button {
+//  color: $background;
+//  background: $gradient-purple;
+//  text-transform: none !important;
+//  min-width: 216px;
+//  min-height: 46px;
+//  font-family: "Avenir", Arial, Helvetica, sans-serif !important;
+//  &.Mui-disabled {
+//   filter: grayscale(50%);
+//  }
+//}
+
+//.secondary-button {
+//  color: $background !important;
+//border-radius: 4px;
+//  text-transform: none !important;
+//  font-size: 16px !important;
+//  min-width: 122px;
+//  min-height: 46px;
+//  border: 2px solid transparent;
+//  background: $background-dark-blue!important;
+//  background-clip: padding-box;
+//  font-family: "Avenir", Arial, Helvetica, sans-serif !important;
+//  &::after {
+//    content: '';
+//    position: absolute;
+//    top: -2px;
+//    bottom: -2px;
+//    left: -2px;
+//    right: -2px;
+//    background: $gradient-purple;
+//    z-index: -1;
+//    border-radius: 4px;
+//  }
+//}

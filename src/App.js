@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Login from "./components/Start/Login";
+import {
+    BrowserRouter,
+    Routes,
+    Route
+} from "react-router-dom";
+import Main from "./components/Main/Main";
+import React, {useState} from "react";
+import Calendar from "./components/Main/Calendar/Calendar";
+import AdminPanel from "./components/Main/AdminPanel/AdminPanel";
+import Register from "./components/Start/Register";
+import GuardedRoute from "./components/Guards/GuardedRoute";
+
+function Switch(props) {
+    return null;
+}
+
+function setToken(userToken) {
+    sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+    const tokenString = sessionStorage.getItem('token');
+    const userToken = JSON.parse(tokenString);
+    return userToken?.token
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [token, setToken] = useState();
+    const [isAutheticated, setisAutheticated] = useState(false);
+
+    const login = () => {
+        setisAutheticated(true);
+        console.log('dupa')
+    }
+
+    const logout = () => {
+        setisAutheticated(false);
+    }
+
+    return (
+        <div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Login setToken={(e) => login(e)}/>}/>
+                    <Route path="/register" element={<Register />}/>
+                    {/*{isAutheticated &&*/}
+                    {/*<>*/}
+                        <Route path="/main" element={<Main/>}/>
+                        <Route path="/calendar" element={<Calendar/>}/>
+                        <Route path="/admin-panel" element={<AdminPanel/>}/>
+                    {/*</>*/}
+                    {/*}*/}
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
